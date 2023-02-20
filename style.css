@@ -328,7 +328,7 @@ body{
 .anouncement .mantnc{
     display: flex;
     flex-flow: column wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 .mantnc h3{
@@ -340,6 +340,7 @@ body{
 }
 .mantnc p{
     justify-self: center;
+    text-align: center;
     font-size: 1rem;
     font-weight: 400;
     color:#000;
