@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{ 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    max-width:100vw;
+    width:100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    /* grid-template-columns:1fr 2fr; */
+    grid-template-areas: 
+    "sd cd cd cd cd cd cd cd cd";
+}
+.wrapper .dashboard{
+    background-color: #1992d4;
+    border: 2px solid #1992d4;
+    grid-area: sd;
+}
+.wrapper .dash_content{
+    grid-area: cd;
+    
+}
+.dashboard .acess{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 2rem 3rem;
+    
+}
+.acess .icons{
+    padding: 0;
+    justify-self: flex-end;
+}
+.acess .icons svg{
+    /* width:8vw; */
+    height: 8vh;
+    padding: 0;
+    color:#fff;
+    justify-self: flex-end;
+}
+.acess .ic_name{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color:#fff;
+    text-transform: capitalize;
+    flex:1;
+}
+.dashboard .quick_access{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    /* align-items: center; */
+    gap:2rem;
+    margin-top: 2rem;
+}
+.quick_access .icon_pack{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1rem;
+    margin-left: 4rem;
+ 
+}
+.icon_pack .icon svg{
+    height:3.5vh;
+    padding: 0;
+    color:#fff;
+    justify-self: center;
+   
+}
+.icon_pack .icon_name{
+    flex:1;
+    justify-self: center;
+    
+}
+.icon_pack .icon_name h3{
+    font-size: 1.9rem;
+    font-weight: 500;
+    color:#fff;
+    text-transform: capitalize;
+    text-align: left;
+}
+.quick_access .mt{
+    margin-top: 6rem;
+}
+.dash_content{
+    background-color: #e2e8f0;
+}
+.dash_content .dash_head{
+   width:100%;
+   height:25vh;
+   background-color: #e2e8f076;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: flex-start;
+   gap:2rem;
+}
+.dash_head .first{
+    max-width: 100%;
+    width: 99vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:3rem;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.first .search{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap:1rem;
+}
+.first .search svg{
+    height:5vh;
+    padding: 0;
+    color:#000;
+    justify-self: center;
+}
+.first .search input{
+    flex:1;
+    width:40vw;
+    justify-self: center;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: #d0d6dd;
+    border: .1px solid #d0d6dd;
+}
+.first .noification{
+    /* flex:1; */
+    display: flex;
+    align-self: flex-end;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap:1rem;
+    height: 8vh;
+}
+.noification svg{
+    height:5vh;
+    justify-self: flex-end;
+    padding: 0;
+    color:#000;
+     
+}
+ /* .logo{
+    width:6vw;
+    height: 7vh;
+    
+} */
+.noification h3{
+    font-size: 1.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color:#000;
+    justify-self: flex-end;
+}
+.dash_head .second{
+    max-width: 100%;
+    width: 99vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:2.5rem;
+    padding: 0 .5rem 0 1rem ;
+   
+}
+.second .about{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap:.5rem;
+}
+.about .text p{
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding: .5rem;
+    color:#000;
+}
+.about .text h2{
+    font-size: 2rem;
+    font-weight: 400;
+    padding: .5rem;
+    color:#000;
+}
+.logo1{
+   
+    width: 5vw;
+    height: 7vh;
+    background-image: url('./images/man.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.second .button{
+    flex:1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap:1rem;
+}
+.button a{
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1rem 3rem;
+    color:#fff;
+    background-color: #1992d4;
+    margin: .5rem;
+    text-decoration: none;
+    border-radius: 2rem;
+}
+.main_head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.main_head .pro{
+    flex: 1;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+    margin-left: 8rem;
+    margin-top: 5rem;
+}
+.main_head .ann{
+    flex: 1;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #000;
+    text-align: right;
+    padding-right: 6rem;
+    margin-right:4rem;
+    margin-top: 5rem;
+}
+.your_content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    max-width: 100vw;
+    background-color: #e2e8f0;
+    width: 99.9%;
+}
+.projects{
+    width:55vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:3rem;
+    margin: 4rem 0;
+    margin-left: 4rem;
+    place-items: center;
+}
+.projects .mb{
+    margin-bottom: 1rem;
+}
+.projects .project{
+    width:23vw;
+    height: 25vh;
+    background-color: #fff;
+    border-radius: .8rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.103),
+    -2px -2px 2px 2px rgba(0, 0, 0, 0.103);
+    /* border: 1px solid red; */
+    border-left: 10px solid #f0b429;
+}
+.project h2{
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 1rem;
+}
+.project p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding: .8rem;
+}
+.anment{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:3rem;
+    margin: 4rem 0;
+    place-items: center;
+}
+.anment .anouncement,.trending{
+    width:15vw;
+    height: 40vh;
+    background-color: #fff;
+    border-radius: .8rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.103),
+    -2px -2px 2px 2px rgba(0, 0, 0, 0.103);
+    
+}
+.project .user_sel{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2.5rem;
+    margin-top: 1rem;
+    gap:1rem
+}
+.project .user_sel svg{
+   height:3vh;
+   color:#000;
+   padding: 0;
+}
+.anouncement .mantnc{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.mantnc h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:#000;
+    text-transform: capitalize;
+    padding: 1rem;
+}
+.mantnc p{
+    justify-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color:#000;
+    text-transform: capitalize;
+    padding: 0 1rem;
+}
+
+.trending{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.people1,.people2,.people3,.people4{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.people1{
+    margin-top: 1.5rem;
+}
+
+.people1 .logo2{
+    width: 5vw;
+    height: 7vh;
+    background-image: url('./images/man1.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.people2 .logo3{
+    width: 5vw;
+    height: 7vh;
+    background-image: url('./images/man2.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.people3 .logo4{
+    width: 5vw;
+    height: 7vh;
+    background-image: url('./images/man3.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.people4 .logo5{
+    width: 5vw;
+    height: 7vh;
+    background-image: url('./images/man5.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.text h4{
+    
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: .5rem;
+    color:#000;
+}
+.text p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-top: .5rem;
+    color:#000;
+}
