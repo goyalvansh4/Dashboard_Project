@@ -36,7 +36,7 @@ body{
     justify-content: flex-start;
     flex-flow: row wrap;
     align-items: center;
-    margin: 2rem 3rem 2rem .5rem;
+    margin: 2rem 3.5rem 2rem .5rem;
     
 }
 .acess .icons{
@@ -52,7 +52,7 @@ body{
 }
 .acess .ic_name{
     font-size: 2rem;
-    padding:.5rem
+    padding:0 .5rem 0 0;
     font-weight: 500;
     color:#fff;
     text-transform: capitalize;
