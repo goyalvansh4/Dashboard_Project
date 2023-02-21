@@ -51,7 +51,8 @@ body{
     justify-self: flex-end;
 }
 .acess .ic_name{
-    font-size: 2.2rem;
+    font-size: 2rem;
+    padding:.5rem
     font-weight: 700;
     color:#fff;
     text-transform: capitalize;
