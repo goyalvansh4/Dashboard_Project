@@ -26,10 +26,11 @@ body{
     background-color: #1992d4;
     border: 2px solid #1992d4;
     grid-area: sd;
+    max-width: 25vw;
 }
 .wrapper .dash_content{
     grid-area: cd;
-    
+    max-width: 85vw;
 }
 .dashboard .acess{
     display: flex;
